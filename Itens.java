@@ -1,10 +1,11 @@
 import java.util.Scanner;
-
 import Guerreiros.Guerreiro;
 import Magos.Mago;
+
 public class Itens {
 
     Scanner scanner = new Scanner(System.in);
+
     Guerreiro guerreiro = new Guerreiro();
     Mago mago =new Mago();
     Combates combates = new Combates();
@@ -99,8 +100,7 @@ public class Itens {
                 System.out.printf("Você possui %d em dinheiro.%n",dinheiro);
                 System.out.print(historia.menu2);
                 resposta2 = scanner.nextInt();
-            }
-           
+            }          
             if(resposta2 == 1){
                 System.out.println(loja);
                 EscolherItensLoja();
