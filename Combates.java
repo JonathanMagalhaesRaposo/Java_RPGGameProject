@@ -28,22 +28,22 @@ public class Combates {
                 System.out.println("O Boss desviou do ataque!");
             } else {
                 Boss1.vida = Boss1.vida - guerreiro.getAtaqueFisico();
-                System.out.printf("A vida do Boss caiu para %d%n", boss1.getBossVida());
+                System.out.printf("A vida do Boss caiu para %d, devido ao seu ataque.%n", boss1.getBossVida());
             }
             if (boss1.getBossAtaqueFisico() <= guerreiro.getDestreza()) {
-                System.out.println("O Herói desviou do ataque!");
+                System.out.println("Você desviou do ataque!");
             } else {
                 Guerreiro.vida = Guerreiro.vida - boss1.getBossAtaqueFisico();
-                System.out.printf("A vida do Herói caiu para %d%n", guerreiro.getVida());
+                System.out.printf("A sua vida caiu para %d%n", guerreiro.getVida());
             }
             Boss1.vida = Boss1.vida - mago.getAtaquemagico();
-            System.out.printf("A vida do Boss caiu para: %d%n", boss1.getBossVida());
+            System.out.printf("A vida do Boss caiu para: %d, devido ao ataque mágico.%n", boss1.getBossVida());
             Mago.vida = Mago.vida - boss1.getBossAtaqueFisico();
-            System.out.printf("A vida do Mago caiu para: %d%n", mago.getVida());
+            System.out.printf("A vida do Mago caiu para: %d.%n", mago.getVida());
         }
         if (boss1.getBossVida() > 0) {
             System.out.println("\nO Boss venceu!");
-            System.out.printf("A vida do Boss está: %d%n", boss1.getBossVida());
+            System.out.printf("A vida do Boss está: %d.%n", boss1.getBossVida());
         }
         if (guerreiro.getVida() > 0) {
             System.out.printf("\nParabens %s! Você venceu a batalha!%n%n", Guerreiro.nomeguerreiro);
