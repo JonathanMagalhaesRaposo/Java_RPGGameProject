@@ -1,8 +1,9 @@
 package Bosses;
+
 import java.util.Random;
 
 public class Boss1 {
-    
+
     Random random = new Random();
 
     public static int vida = 300;
@@ -10,28 +11,27 @@ public class Boss1 {
     protected int ataquefisico = random.nextInt(valorataquefisico);
     protected int destreza = 8;
 
-    public int getBossAtaqueFisico(){
+    public int getBossAtaqueFisico() {
         return ataquefisico;
     }
 
-    public void setBossAtaqueFisico(int ataquefisico){
+    public void setBossAtaqueFisico(int ataquefisico) {
         this.ataquefisico = ataquefisico;
     }
 
-    public int getBossVida(){
-        if(vida < 0){
+    public int getBossVida() {
+        if (vida < 0) {
             vida = 0;
         }
         return vida;
     }
 
-    public int getBossDestreza(){
+    public int getBossDestreza() {
         return destreza;
     }
 
-    public void setBossDestreza(int destreza){
+    public void setBossDestreza(int destreza) {
         this.destreza = destreza;
     }
-    
 
 }

@@ -8,5 +8,5 @@ public class Historia {
     public String sextoparagrafo = "Graças a sua nova habilidade você primeiro vai checar as informações sobre o monstro:\n\n";
     public String menu1 = "O que vocês devem fazer?\n1-Adquirir algum item para ajudar no combate.\n2-Entrar e lutar!\n";
     public String menu2 = "Digite o número correspondente a ação que deseja tomar:\n";
-    
+
 }
